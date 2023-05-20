@@ -12,14 +12,14 @@ const Header = ({ theme, setTheme, toggle, setToggle }) => {
         <Link href='/'>
           <Image
             src={payuxLogo}
-            alt='icon'
+            alt=''
             className='cursor-pointer'
           />
         </Link>
         <Image
           src={menuIcon}
           className='cursor-pointer'
-          alt='icon'
+          alt=''
           onClick={() => setToggle(!toggle)}
         />
       </div>
@@ -51,7 +51,7 @@ const Header = ({ theme, setTheme, toggle, setToggle }) => {
               <div className="flex items-center gap-1 cursor-pointer dark:text-gray-100 text-gray-600">
                 <Image 
                   src={helpIcon} 
-                  alt='icon'
+                  alt=''
                 />
                 <span>
                   Help
@@ -60,7 +60,7 @@ const Header = ({ theme, setTheme, toggle, setToggle }) => {
               <Image
                 src={notificationIcon}
                 className='cursor-pointer'
-                alt='icon'
+                alt=''
               />
               <Image
                 src={settingsIcon}

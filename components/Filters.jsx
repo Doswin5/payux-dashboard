@@ -50,7 +50,7 @@ const Filters = () => {
           <div className={`flex items-center p-2 rounded-lg border bg-white border-[#E4E6E80] dark:bg-transparent dark:border-[#E4E6E880] gap-2`}>
             <Image 
               src={dateIcon}
-              alt='icon' 
+              alt='' 
             />
             <select
               name=""
@@ -63,7 +63,7 @@ const Filters = () => {
           <div className={`flex items-center p-2 rounded-lg border bg-white border-[#E4E6E80] dark:bg-transparent dark:border-[#E4E6E880] gap-2`}>
             <Image 
               src={statusIcon}
-              alt='icon' 
+              alt='' 
             />
             <select
               name=""
@@ -79,7 +79,7 @@ const Filters = () => {
             </select>
           </div>
           <div className={`flex items-center p-2 rounded-lg border bg-white border-[#E4E6E80] dark:bg-transparent dark:border-[#E4E6E880] gap-2`}>
-            <Image src={bankIcon} alt='icon' />
+            <Image src={bankIcon} alt='' />
             <select
               name=""
               id=""
@@ -94,7 +94,7 @@ const Filters = () => {
           <Image
             src={searchIcon}
             className=''
-            alt='icon'
+            alt=''
           />
           <input
             value={searchId}
