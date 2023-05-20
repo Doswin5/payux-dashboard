@@ -65,12 +65,13 @@ const Header = ({ theme, setTheme, toggle, setToggle }) => {
               <Image
                 src={settingsIcon}
                 className='cursor-pointer'
+                alt=''
               />
             </div>
             <div className="flex items-center gap-2 cursor-pointer">
               <Image
                 src={rappiLogo}
-                alt='logo'
+                alt=''
               />
               <select 
                 name="" 
