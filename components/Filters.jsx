@@ -48,7 +48,10 @@ const Filters = () => {
       <div className={`md:flex hidden items-center ${toggleTab === 'all' ? 'justify-between' : 'justify-end'} w-full dark:text-gray-100 text-gray-600`}>
         <div className={`${toggleTab === 'all' ? 'flex' : 'hidden'} items-center gap-4 text-sm`}>
           <div className={`flex items-center p-2 rounded-lg border bg-white border-[#E4E6E80] dark:bg-transparent dark:border-[#E4E6E880] gap-2`}>
-            <Image src={dateIcon} />
+            <Image 
+              src={dateIcon}
+              alt='icon' 
+            />
             <select
               name=""
               id=""
@@ -58,7 +61,10 @@ const Filters = () => {
             </select>
           </div>
           <div className={`flex items-center p-2 rounded-lg border bg-white border-[#E4E6E80] dark:bg-transparent dark:border-[#E4E6E880] gap-2`}>
-            <Image src={statusIcon} />
+            <Image 
+              src={statusIcon}
+              alt='icon' 
+            />
             <select
               name=""
               id=""
@@ -73,7 +79,7 @@ const Filters = () => {
             </select>
           </div>
           <div className={`flex items-center p-2 rounded-lg border bg-white border-[#E4E6E80] dark:bg-transparent dark:border-[#E4E6E880] gap-2`}>
-            <Image src={bankIcon} />
+            <Image src={bankIcon} alt='icon' />
             <select
               name=""
               id=""
@@ -88,6 +94,7 @@ const Filters = () => {
           <Image
             src={searchIcon}
             className=''
+            alt='icon'
           />
           <input
             value={searchId}

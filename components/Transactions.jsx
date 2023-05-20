@@ -103,6 +103,7 @@ const Transactions = () => {
               <td className='py-4'>
                 <Image 
                   src={theme === 'light' ? checkbox : darkCheckbox} className='cursor-pointer' 
+                  alt='icon'
                 />
               </td>
               <td className='py-4'>PAYMENT ID</td>
@@ -119,12 +120,14 @@ const Transactions = () => {
                   <td className='py-4'>
                     <Image
                       src={theme === 'light' ? checkbox : darkCheckbox} className='cursor-pointer'
+                      alt='icon'
                     />
                   </td>
                   <td className='py-4'>{transaction.paymentId}</td>
                   <td className='py-4'>
                     <Image
                       src={transaction.statusImage} className='cursor-pointer'
+                      alt='icon'
                       // width={70}
                       // height={24}
                     />
@@ -132,14 +135,16 @@ const Transactions = () => {
                   <td className='py-4'><span className="font-medium">{transaction.amount}</span> USD</td>
                   <td className='py-4'>
                     <Image
-                      src={transaction.paymentMethod} className='cursor-pointer'
+                      src={transaction.paymentMethod} 
+                      alt='icon'
+                      className='cursor-pointer'
                       // width={70}
                       // height={16}
                     />
                   </td>
                   <td className='py-4'>{transaction.creationDate}</td>
                   <div className="invisible md:visible absolute right-0 top-1/2 -translate-y-1/2">
-                    <Image src={dropdown} className='' />
+                    <Image src={dropdown} alt='icon' className='' />
                   </div>
                 </tr>
               ))

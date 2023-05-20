@@ -20,6 +20,7 @@ const SideBar = ({ theme, setTheme, toggle, setToggle }) => {
                 <Link key={sidebarLink.id} href={sidebarLink.linkRoute} className={`${router.pathname === sidebarLink.linkRoute && 'bg-[#eceaff] dark:bg-[#13131a] text-[#4A46FF]'} flex items-center gap-4 py-2 px-4 rounded-lg bg-transparent hover:bg-[#F7F6FF] dark:hover:bg-[#13131A]`}>
                   <Image
                     src={sidebarLink.icon} 
+                    alt='icon'
                   />
                   <span>{sidebarLink.linkName}</span>
                 </Link>
@@ -35,12 +36,14 @@ const SideBar = ({ theme, setTheme, toggle, setToggle }) => {
               <Link href='/documentation' className={`${router.pathname === '/documentation' && 'bg-[#F7F6FF] dark:bg-[#13131a] text-[#4A46FF]'} flex items-center gap-4 py-2 px-4 rounded-lg bg-transparent hover:bg-[#F7F6FF] dark:hover:bg-[#13131A]`}>
               <Image
                 src={documentationIcon} 
+                alt='icon'
               />
               <span>Documentation</span>
             </Link>
               <Link href='/logout' className={`${router.pathname === '/logout' && 'bg-[#F7F6FF] dark:bg-[#13131a] text-[#4A46FF]'} flex items-center gap-4 py-2 px-4 rounded-lg bg-transparent hover:bg-[#F7F6FF] dark:hover:bg-[#13131A]`}>
               <Image
                 src={logoutIcon} 
+                alt='icon'
               />
               <span>Log Out</span>
             </Link>

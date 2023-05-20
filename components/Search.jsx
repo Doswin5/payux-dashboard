@@ -9,6 +9,7 @@ const Search = ({ placeholder }) => {
       <Image
         src={searchIcon}
         className=''
+        alt='icon'
       />
       <input
         type="text"

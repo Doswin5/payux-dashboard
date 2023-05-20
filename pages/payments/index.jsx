@@ -17,12 +17,14 @@ const Payments = () => {
           <button className={`flex gap-2 items-center dark:text-gray-100 text-gray-600 bg-white dark:bg-[#1C1C1C] dark:border-none font-medium text-sm border rounded-lg p-2`}>
             <Image
               src={downloadIcon}
+              alt='download icon'
             />
             Export
           </button>
           <button className="flex gap-2 items-center text-white bg-[#4A46FF] font-medium text-sm rounded-lg p-2 pr-4">
             <Image
               src={addIcon}
+              alt='icon'
             />
             Payment Link
           </button>
